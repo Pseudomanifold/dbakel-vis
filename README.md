@@ -13,6 +13,59 @@ contains a lot of tables, making the parsing process quite hard. I wrote
 some code to extract said tables and visualise them---please find the
 results below.
 
+## Installation
+
+Use `pip` or `poetry` (or any other tool you use to manage your Python
+projects) to install the dependencies:
+
+```bash
+$ pip install .   # For pip
+$ poetry install  # For poetry
+```
+
+Read on for some infos about the scripts.
+
+## Files
+
+```
+├── extract.py
+├── figures
+│   ├── bridges_by_county.png
+│   ├── bridges.png
+│   ├── crossings_by_county.png
+│   ├── crossings.png
+│   ├── dbakel.jpg
+│   ├── structures_by_county.png
+│   ├── structures.png
+│   ├── switches_by_county.png
+│   ├── switches.png
+│   ├── tracks_by_county.png
+│   └── tracks.png
+├── LICENSE.md
+├── raw
+│   └── 2010284.pdf
+├── README.md
+├── tables
+│   ├── Bridges.csv
+│   ├── Crossings.csv
+│   ├── Structures.csv
+│   ├── Switches.csv
+│   └── Tracks.csv
+└── visualise.py
+```
+
+## Scripts
+
+- `extract.py`: run this to (re-)create the tables. All tables will be
+  placed in the `tables` directory.
+
+- `visualise.py`: create some visualisations. This is where you can get
+  creative! To create some visualisations for a specific object, just
+  call the script with the respective parameter. For instance, to
+  visualise the condition of bridges, call `python visualise.py
+  tables/Bridges.csv`. This will create the respective figures in the
+  `figures` directory.
+
 ## Remarks
 
 - Notice that these visualisations only show a fraction of all objects,
@@ -25,7 +78,7 @@ results below.
   indicating that maintenance of this part of the infrastructure will
   pose a restriction for additional parts of the network.
 
-# Figures
+# Results
 
 It's not looking good for Deutsche Bahn, in particular in North
 Rhine-Westphalia (NW) and Bavaria (BY). There's a lot of things
@@ -55,47 +108,6 @@ to do now...
 
 ![Tracks](figures/tracks.png)
 ![Tracks (by county)](figures/tracks_by_county.png)
-
-# Files
-
-```
-├── extract.py
-├── figures
-│   ├── bridges_by_county.png
-│   ├── bridges.png
-│   ├── crossings_by_county.png
-│   ├── crossings.png
-│   ├── dbakel.jpg
-│   ├── structures_by_county.png
-│   ├── structures.png
-│   ├── switches_by_county.png
-│   ├── switches.png
-│   ├── tracks_by_county.png
-│   └── tracks.png
-├── LICENSE.md
-├── raw
-│   └── 2010284.pdf
-├── README.md
-├── tables
-│   ├── Bridges.csv
-│   ├── Crossings.csv
-│   ├── Structures.csv
-│   ├── Switches.csv
-│   └── Tracks.csv
-└── visualise.py
-```
-
-# Scripts
-
-- `extract.py`: run this to (re-)create the tables. All tables will be
-  placed in the `tables` directory.
-
-- `visualise.py`: create some visualisations. This is where you can get
-  creative! To create some visualisations for a specific object, just
-  call the script with the respective parameter. For instance, to
-  visualise the condition of bridges, call `python visualise.py
-  tables/Bridges.csv`. This will create the respective figures in the
-  `figures` directory.
 
 # License
 
