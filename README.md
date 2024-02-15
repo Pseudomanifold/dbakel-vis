@@ -1,5 +1,7 @@
 # dbakel-vis
 
+![dbakel](figures/dbakel.jpg)
+
 This repository is an attempt at visualising the 'debacle' that is the
 German railway system at the moment. Based on a [recent report by the
 German Government](https://dserver.bundestag.de/btd/20/102/2010284.pdf)
