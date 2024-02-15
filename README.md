@@ -58,6 +58,33 @@ to do now...
 
 # Files
 
+```
+├── extract.py
+├── figures
+│   ├── bridges_by_county.png
+│   ├── bridges.png
+│   ├── crossings_by_county.png
+│   ├── crossings.png
+│   ├── dbakel.jpg
+│   ├── structures_by_county.png
+│   ├── structures.png
+│   ├── switches_by_county.png
+│   ├── switches.png
+│   ├── tracks_by_county.png
+│   └── tracks.png
+├── LICENSE.md
+├── raw
+│   └── 2010284.pdf
+├── README.md
+├── tables
+│   ├── Bridges.csv
+│   ├── Crossings.csv
+│   ├── Structures.csv
+│   ├── Switches.csv
+│   └── Tracks.csv
+└── visualise.py
+```
+
 # Scripts
 
 - `extract.py`: run this to (re-)create the tables. All tables will be
