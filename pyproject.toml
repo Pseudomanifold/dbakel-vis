@@ -1,10 +1,16 @@
-[project]
-name = "dbakel"
+[tool.poetry]
+name = "dbakel-vis"
+version = "0.0.1"
 description = "Visualing the 'debacle' that is the German railway system"
-authors = [
-  {name = "Bastian Rieck", email = "bastian@rieck.me"},
-]
-requires-python = ">=3.11"
+authors = ["Bastian Rieck <bastian@rieck.me>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+pymupdf = "^1.23.22"
+pandas = "^2.2.0"
+pyarrow = "^15.0.0"
+colorcet = "^3.0.1"
+seaborn = "^0.13.2"
 
 [tool.black]
 line-length = 79
