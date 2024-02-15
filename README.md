@@ -11,6 +11,32 @@ contains a lot of tables, making the parsing process quite hard. I wrote
 some code to extract said tables and visualise them---please find the
 results below.
 
+## Remarks
+
+- Notice that these visualisations only show a fraction of all objects,
+  namely the ones that are not in the best condition any more. It is
+  unclear what the total count should be. **If you know where to find an
+  assessment that contains all conditions, let me know.**
+
+- I am unsure about the grading scale and followed the ordering in the
+  original report. It seems that 'restrictive' is the lowest grade,
+  indicating that maintenance of this part of the infrastructure will
+  pose a restriction for additional parts of the network.
+
+# Files
+
+# Scripts
+
+- `extract.py`: run this to (re-)create the tables. All tables will be
+  placed in the `tables` directory.
+
+- `visualise.py`: create some visualisations. This is where you can get
+  creative! To create some visualisations for a specific object, just
+  call the script with the respective parameter. For instance, to
+  visualise the condition of bridges, call `python visualise.py
+  tables/Bridges.csv`. This will create the respective figures in the
+  `figures` directory.
+
 # License
 
 The code is licensed under a BSD 3-Clause License. This basically means
