@@ -23,7 +23,27 @@ if __name__ == "__main__":
     df = df.replace("einschränkend", "restrictive")
 
     order = ["poor", "deficient", "restrictive"]
-    hue_order = sorted(df[county].unique())
+
+    # Not all data files contain all counties. This ensures a consistent
+    # ordering.
+    hue_order = [
+        "BB",
+        "BE",
+        "BW",
+        "BY",
+        "HB",
+        "HE",
+        "HH",
+        "MV",
+        "NI",
+        "NW",
+        "RP",
+        "SH",
+        "SL",
+        "SN",
+        "ST",
+        "TH",
+    ]
 
     print(df)
 
