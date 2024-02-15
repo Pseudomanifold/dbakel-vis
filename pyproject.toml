@@ -1,0 +1,10 @@
+[project]
+name = "dbakel"
+description = "Visualing the 'debacle' that is the German railway system"
+authors = [
+  {name = "Bastian Rieck", email = "bastian@rieck.me"},
+]
+requires-python = ">=3.11"
+
+[tool.black]
+line-length = 79
