@@ -2,7 +2,10 @@ import sys
 import os
 
 import pandas as pd
+
+import colorcet as cc
 import seaborn as sns
+
 import matplotlib.pyplot as plt
 
 
@@ -47,8 +50,6 @@ if __name__ == "__main__":
 
     print(df)
 
-    sns.color_palette("Set2")
-
     sns.catplot(df, x=condition, order=order, kind="count")
     plt.title(description)
     plt.tight_layout()
@@ -62,7 +63,7 @@ if __name__ == "__main__":
         hue=county,
         hue_order=hue_order,
         kind="count",
-        palette="Set2",
+        palette=sns.color_palette(cc.glasbey_light, n_colors=16)
     )
 
     plt.title(description + " (by county)")
