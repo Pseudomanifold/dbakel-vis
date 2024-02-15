@@ -25,6 +25,10 @@ results below.
 
 # Figures
 
+It's not looking good for Deutsche Bahn, in particular in North
+Rhine-Westphalia (NW) and Bavaria (BY). There's a lot of things
+to do now...
+
 ## Bridges (Brücken)
 
 ![Bridges](figures/bridges.png)
