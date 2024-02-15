@@ -33,6 +33,8 @@ if __name__ == "__main__":
     plt.title(description)
     plt.tight_layout()
 
+    plt.savefig("figures/" + description.lower() + ".png")
+
     sns.catplot(
         df,
         x=condition,
@@ -45,5 +47,7 @@ if __name__ == "__main__":
 
     plt.title(description + " (by county)")
     plt.tight_layout()
+
+    plt.savefig("figures/" + description.lower() + "_by_county" + ".png")
 
     plt.show()
