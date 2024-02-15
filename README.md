@@ -25,8 +25,30 @@ results below.
 
 # Figures
 
+## Bridges (Brücken)
+
 ![Bridges](figures/bridges.png)
 ![Bridges (by county)](figures/bridges_by_county.png)
+
+## Crossings (Übergänge)
+
+![Crossings](figures/crossings.png)
+![Crossings (by county)](figures/crossings_by_county.png)
+
+## Structures (Stützbauwerke)
+
+![Structures](figures/structures.png)
+![Structures (by county)](figures/structures_by_county.png)
+
+## Switches (Weichen)
+
+![Switches](figures/switches.png)
+![Switches (by county)](figures/switches_by_county.png)
+
+## Tracks (Gleise)
+
+![Tracks](figures/tracks.png)
+![Tracks (by county)](figures/tracks_by_county.png)
 
 # Files
 
