@@ -23,6 +23,11 @@ results below.
   indicating that maintenance of this part of the infrastructure will
   pose a restriction for additional parts of the network.
 
+# Figures
+
+![Bridges](figures/bridges.png)
+![Bridges (by county)](figures/bridges_by_county.png)
+
 # Files
 
 # Scripts
